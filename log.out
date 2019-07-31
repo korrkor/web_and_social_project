@@ -1652,3 +1652,24 @@ Deleting directory C:\Users\Probook6570b\AppData\Local\Temp\spark-4a356786-f871-
 Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
 Shutdown hook called
 Deleting directory C:\Users\Probook6570b\AppData\Local\Temp\spark-f17d2731-df3e-4b8d-8353-0616d19a6d0c
+<<<<<<< HEAD
+Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Shutdown hook called
+Deleting directory C:\Users\Probook6570b\AppData\Local\Temp\spark-4a33435b-70ae-4f60-b44c-865d0ce83e44
+Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Shutdown hook called
+Deleting directory C:\Users\Probook6570b\AppData\Local\Temp\spark-97c29f23-10e3-4eef-b99d-598709dc914c
+Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Shutdown hook called
+Deleting directory C:\Users\Probook6570b\AppData\Local\Temp\spark-8a054aeb-8a19-4019-bdf5-af40210b0529
+Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Shutdown hook called
+Deleting directory C:\Users\Probook6570b\AppData\Local\Temp\spark-595bb43b-decd-4c03-85bf-e2d33b044f17
+Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Shutdown hook called
+Deleting directory C:\Users\Probook6570b\AppData\Local\Temp\spark-ac57e3ea-aaa7-479d-b788-e8bf70918a7b
+Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Shutdown hook called
+Deleting directory C:\Users\Probook6570b\AppData\Local\Temp\spark-695226f5-8777-4d01-81ac-3619d7202163
+=======
+>>>>>>> e46e9dcb4fe6e33657ec794c6117870a90b42b3f

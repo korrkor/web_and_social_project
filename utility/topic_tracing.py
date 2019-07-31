@@ -3,6 +3,10 @@ import ast
 import numpy as np
 import matplotlib.pyplot as plt
 from pyspark.sql import SparkSession, HiveContext
+<<<<<<< HEAD
+from pyts.approximation import PAA
+=======
+>>>>>>> e46e9dcb4fe6e33657ec794c6117870a90b42b3f
 # import display
 class TopicTracing:
     
