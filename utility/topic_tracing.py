@@ -3,10 +3,13 @@ import ast
 import numpy as np
 import matplotlib.pyplot as plt
 from pyspark.sql import SparkSession, HiveContext
-<<<<<<< HEAD
-from pyts.approximation import PAA
-=======
->>>>>>> e46e9dcb4fe6e33657ec794c6117870a90b42b3f
+import numpy as np
+from saxpy.znorm import znorm
+from saxpy.paa import paa
+from saxpy.sax import ts_to_string 
+from saxpy.alphabet import *
+	 
+
 # import display
 class TopicTracing:
     
@@ -60,12 +63,26 @@ class TopicTracing:
                     print(df_filter_years)
                     df_finale = df_filter_years.groupby(['new_keyword',"year"]).sum()[["count"]].sort_values(by = "year").reset_index()
                     print("yyyyyyyyyyyyyyyyyyyyyyyyyyyyyy")
-                    years = [pd.year for year in df_finale["year"].tolist() ]
+                    years = [year for year in df_finale["year"].tolist() ]
                     plt.plot(df_finale["year"].tolist(), df_finale["count"].tolist(), label=keyword[0])
-          
-                    plt.legend()          # plt.show()
+
+                    index = pd.DatetimeIndex(df_finale["year"].tolist())
+                    data = pd.Series(df_finale["count"].tolist(), index=index)
+                    
+
+                    dat = np.array(data)
+                    dat_znorm = znorm(dat)
+                    dat_paa_3 = paa(dat_znorm, 3)
+                    plt.legend()
                     plt.show()
+                    print("this is the result ******************************************",ts_to_string(dat_paa_3, cuts_for_asize(3)))
+
         
+
+
+
+
+
                 # plt.plot([0.1, 0.2, 0.3, 0.4], [1, 4, 9, 16], label='second plot')
                 # print("******233333333333333333333333333333333333333333333333333333333333333333333333333322222**************")
                 # final_df = final_df.append({'keyword': keyword[0], 'year': df_finale["year"] , 'count': df_finale["count"]}, ignore_index=True)

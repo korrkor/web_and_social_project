@@ -1,7 +1,13 @@
-from utility.topic_identification import TopicIdentification
-from utility.topic_tracing import TopicTracing
+import sys
+sys.path.insert(1, '/home/kor/SCHOOL/web_and_social_project/utility')
+from topic_identification import * 
+from topic_tracing import * 
 from operator import itemgetter
 import random
+
+# from utility.topic_identification import TopicIdentification
+# from utility.topic_tracing import TopicTracing
+
 
 # topic TopicIdentification************************************************************
 ti = TopicIdentification()
